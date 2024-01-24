@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* --------|| Root Element ||-------- */
+
+:root {
+  --text: #413d8498;
+  --button: rgba(255, 0, 0, 0.788);
+  --background: linear-gradient(45deg, rgb(9, 9, 212), rgb(224, 49, 224));
+}
+
+/* --------|| Main ||-------- */
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  color: aliceblue;
+}
+
+main h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: -3em;
+}
+
+main h1 span {
+  color: var(--button);
+}
+
+main textarea {
+  width: 40em;
+  height: 20em;
+  margin: 3em;
+  resize: none;
+  padding: 1.5em;
+  font-size: 1rem;
+  outline: none;
+  border: 2px rgba(255, 255, 255, 0.505) solid;
+  border-radius: 5px;
+  background-color: var(--text);
+  color: aliceblue;
+}
+
+textarea::placeholder {
+  font-size: 1rem;
+  color: aliceblue;
+}
+
+button {
+  background: var(--button);
+  color: aliceblue;
+  font-size: 1.2rem;
+  padding: 0.3em 0.5em;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+button img {
+  width: 15px;
+  height: 20px;
+  color: aliceblue;
+}
